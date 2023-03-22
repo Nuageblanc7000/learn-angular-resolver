@@ -1,0 +1,15 @@
+<h2>Listes des fans actuel</h2>
+<!-- <div *ngIf="fans?.length">
+  <p>Aucun fan dans la liste actuel</p>
+</div> -->
+<div class="container">
+  <ul class="mb-20 list-primary">
+    <li class="mb-20 list-primary" *ngFor="let fan of fans">
+      <a class="d-flex flex-fill" [routerLink]="['../fan-detail', fan.id]">
+        <div>
+          {{ fan.name }}
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

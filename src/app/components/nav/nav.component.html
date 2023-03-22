@@ -1,0 +1,11 @@
+<nav
+  class="d-flex flex-row flex-justify-content-between flex-align-items-center p-10"
+>
+  <ul>
+    <li *ngFor="let link of links">
+      <a [routerLink]="link.url">
+        {{ link.label }}
+      </a>
+    </li>
+  </ul>
+</nav>
